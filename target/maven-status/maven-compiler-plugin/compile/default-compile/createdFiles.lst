@@ -1,0 +1,7 @@
+ec\edu\ups\entidades\Restaurante.class
+ec\edu\ups\ejb\RestauranteFacade.class
+ec\edu\ups\controlador\PersonaBean.class
+ec\edu\ups\controlador\RestauranteBean.class
+ec\edu\ups\ejb\AbstractFacade.class
+ec\edu\ups\entidades\Persona.class
+ec\edu\ups\ejb\PersonaFacade.class

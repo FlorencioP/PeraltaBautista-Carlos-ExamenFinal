@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" 
+xmlns:h="http://xmlns.jcp.org/jsf/html" 
+xmlns:f="http://xmlns.jcp.org/jsf/core" 
+xmlns:ui="http://xmlns.jcp.org/jsf/facelets" 
+xmlns:p="http://xmlns.jcp.org/jsf/passthrough"
+xmlns:a="http://primefaces.org/ui"
+>
+
+<h:head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/PeraltaBautista-Carlos-ExamenFinal/assets/img/apple-icon.png" />
+    <link rel="icon" type="image/png" href="/PeraltaBautista-Carlos-ExamenFinal/assets/img/favicon.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>Crear Restaurante</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+    <!-- CSS Files -->
+	<link href="/PeraltaBautista-Carlos-ExamenFinal/assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/PeraltaBautista-Carlos-ExamenFinal/assets/css/now-ui-dashboard.css?v=1.5.0" rel="stylesheet" />
+</h:head>
+
+<h:body>
+
+    <div class="wrapper ">
+        <div class="sidebar" data-color="green">
+            <div class="logo">
+                <h1 style="color:white;"> Restaurantes </h1>
+            </div>
+            <div class="sidebar-wrapper" id="sidebar-wrapper">
+                <h:form>
+                    <ul class="nav">
+                        <li class="active ">
+                            <h:commandLink value="Crear Restaurante" >
+                                <i class="now-ui-icons business_badge"></i>
+                            </h:commandLink>
+                        </li>
+
+                    </ul>
+                </h:form>
+            </div>
+        </div>
+        <div class="main-panel" id="main-panel">
+            <!-- Navbar -->
+            
+            
+            
+            
+            
+            <!-- End Navbar -->
+            <div class="panel-header panel-header-lg">
+                <canvas id="bigDashboardChart"></canvas>
+            </div>
+            <!-- CONTENIDOOO -->
+           
+           
+           
+           <div class="content">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="title">Añadir Restaurante</h5>
+                            </div>
+                            <div class="card-body">
+
+
+
+                                <h:form id="crearUsuario">
+                                    <div class="row">
+                                      
+                                        <div class="col-md-3 px-1">
+                                            <div class="form-group">
+                                                <label>Nombre:</label>
+                                                <a:inputText id="nombre" class="form-control" value="#{restauranteBean.nombre}" cols="2" p:placeholder="Nombre" />
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 pl-1">
+                                            <div class="form-group">
+                                                <label for="exampleInputEmail1">Aforo:</label>
+                                                <a:inputText class="form-control" id="apellido" value="#{restauranteBean.aforo}" cols="2" p:placeholder="Apellido" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        
+                                        <div class="col-md-6 pl-1">
+                                            <div class="form-group">
+                                                <label>Direccion:</label>
+                                                <a:inputText class="form-control" id="direccion" value="#{restauranteBean.direccion}" cols="2" p:placeholder="Ej. Paute- Abdon Calderon y bahia San jose" />
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4 pr-1">
+                                            <div class="form-group">
+                                                <label>Telefono:</label>
+                                                <a:inputText class="form-control" id="telefono" value="#{restauranteBean.telefono}" cols="2" p:placeholder="Movil o Convencional" />
+                                            </div>
+                                        </div>
+                                        
+
+                                        <div class="col-md-4 pl-1">
+
+                                            <div class="form-group">
+                                                <a:commandButton class="btn btn-primary btn-block" value="Agregar Restaurante" action="#{restauranteBean.agregar()}" update="crearUsuario" >Agregar restaurante</a:commandButton>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </h:form>
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+                </div>
+            </div>
+
+           
+           
+           
+           
+        </div>
+    </div>
+
+</h:body>
+
+</html>
